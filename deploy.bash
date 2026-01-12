@@ -1,0 +1,1 @@
+ssh fonqp@10.7.13.11 "powershell -File deploy.ps1"

@@ -11,14 +11,14 @@ export default function Team() {
             {member.email && (
                 <Tooltip content="Email">
                     <Link to={`mailto:${member.email}`} target="_blank" rel="noopener noreferrer">
-                        <img src="/team/email.png" alt="email" className="h-4" />
+                        <img src="/public/team/email.png" alt="email" className="h-4" />
                     </Link>
                 </Tooltip>
             )}
             {member.googleScholar && (
                 <Tooltip content="Google Scholar">
                     <Link to={member.googleScholar} target="_blank" rel="noopener noreferrer">
-                        <img src="/team/scholar.png" alt="Google Scholar" className="h-5" />
+                        <img src="/public/team/scholar.png" alt="Google Scholar" className="h-5" />
                     </Link>
                 </Tooltip>
             )}

@@ -85,6 +85,13 @@ export default function EC61036() {
                 Prof. Shailendra K. Varshney (<a href="mailto:skvarshney@ece.iitkgp.ac.in" className="text-blue-600 hover:underline">skvarshney@ece.iitkgp.ac.in</a>)
             </Typography>
 
+            <Typography
+                variant="h6"
+                className="text-gray-700 text-center leading-relaxed pt-4"
+            >
+                Teaching Assistant: Shubhanshi Sharma (<a href="mailto:shubhanshi0107@gmail.com" className="text-blue-600 hover:underline">shubhanshi0107@gmail.com</a>)
+            </Typography>
+
             <div className="w-full px-4 md:max-w-[80%] mt-12">
                 <div className="mb-10">
                     <Typography variant="h4" className="text-gray-700 leading-relaxed">
@@ -157,66 +164,68 @@ export default function EC61036() {
 
                     <TabsBody>
                         <TabPanel value="syllabus" className="p-0">
-                            <table className="w-full min-w-max table-auto text-left">
-                                <thead>
-                                    <tr>
-                                        {TABLE_HEAD.map((head) => (
-                                            <th
-                                                key={head}
-                                                className="border-b border-blue-gray-100 bg-blue-gray-50 p-4"
-                                            >
-                                                <Typography
-                                                    variant="small"
-                                                    color="blue-gray"
-                                                    className="font-bold leading-none opacity-70 text-center"
+                            <div className="overflow-x-auto w-full">
+                                <table className="w-full min-w-max table-auto text-left">
+                                    <thead>
+                                        <tr>
+                                            {TABLE_HEAD.map((head) => (
+                                                <th
+                                                    key={head}
+                                                    className="border-b border-blue-gray-100 bg-blue-gray-50 p-4"
                                                 >
-                                                    {head}
-                                                </Typography>
-                                            </th>
-                                        ))}
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {SYLLABUS_ROWS.map(({ module, title, lectures }, index) => {
-                                        const isLast = index === SYLLABUS_ROWS.length - 1;
-                                        const classes = isLast
-                                            ? "p-4"
-                                            : "p-4 border-b border-blue-gray-50";
+                                                    <Typography
+                                                        variant="small"
+                                                        color="blue-gray"
+                                                        className="font-bold leading-none opacity-70 text-center"
+                                                    >
+                                                        {head}
+                                                    </Typography>
+                                                </th>
+                                            ))}
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {SYLLABUS_ROWS.map(({ module, title, lectures }, index) => {
+                                            const isLast = index === SYLLABUS_ROWS.length - 1;
+                                            const classes = isLast
+                                                ? "p-4"
+                                                : "p-4 border-b border-blue-gray-50";
 
-                                        return (
-                                            <tr key={module} className="even:bg-blue-gray-50/50">
-                                                <td className={classes}>
-                                                    <Typography
-                                                        variant="small"
-                                                        color="blue-gray"
-                                                        className="font-normal text-center"
-                                                    >
-                                                        {module}
-                                                    </Typography>
-                                                </td>
-                                                <td className={`${classes} max-w-xl`}>
-                                                    <Typography
-                                                        variant="small"
-                                                        color="blue-gray"
-                                                        className="font-normal whitespace-normal"
-                                                    >
-                                                        {title}
-                                                    </Typography>
-                                                </td>
-                                                <td className={classes}>
-                                                    <Typography
-                                                        variant="small"
-                                                        color="blue-gray"
-                                                        className="font-normal text-center"
-                                                    >
-                                                        {lectures}
-                                                    </Typography>
-                                                </td>
-                                            </tr>
-                                        );
-                                    })}
-                                </tbody>
-                            </table>
+                                            return (
+                                                <tr key={module} className="even:bg-blue-gray-50/50">
+                                                    <td className={classes}>
+                                                        <Typography
+                                                            variant="small"
+                                                            color="blue-gray"
+                                                            className="font-normal text-center"
+                                                        >
+                                                            {module}
+                                                        </Typography>
+                                                    </td>
+                                                    <td className={`${classes} max-w-xl`}>
+                                                        <Typography
+                                                            variant="small"
+                                                            color="blue-gray"
+                                                            className="font-normal whitespace-normal"
+                                                        >
+                                                            {title}
+                                                        </Typography>
+                                                    </td>
+                                                    <td className={classes}>
+                                                        <Typography
+                                                            variant="small"
+                                                            color="blue-gray"
+                                                            className="font-normal text-center"
+                                                        >
+                                                            {lectures}
+                                                        </Typography>
+                                                    </td>
+                                                </tr>
+                                            );
+                                        })}
+                                    </tbody>
+                                </table>
+                            </div>
                         </TabPanel>
 
                         <TabPanel value="slides" className="p-0 py-6">

@@ -7,17 +7,17 @@ const installers = [
         name: "Windows",
         icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Windows_logo_-_2021.svg/250px-Windows_logo_-_2021.svg.png",
         options: [
-            { label: ".msi", link: "/services/rng/rng-toolbox/msi/RNG Toolbox_0.1.0_x64_en-US.msi" },
-            { label: "nsis", link: "/services/rng/rng-toolbox/nsis/RNG Toolbox_0.1.0_x64-setup.exe" },
+            { label: ".msi", link: "/public/services/rng/rng-toolbox/msi/RNG Toolbox_0.1.0_x64_en-US.msi" },
+            { label: "nsis", link: "/public/services/rng/rng-toolbox/nsis/RNG Toolbox_0.1.0_x64-setup.exe" },
         ],
     },
     {
         name: "Linux",
         icon: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
         options: [
-            { label: ".deb", link: "/services/rng/rng-toolbox/deb/RNG Toolbox_0.1.0_amd64.deb" },
-            { label: ".rpm", link: "/services/rng/rng-toolbox/rpm/RNG Toolbox-0.1.0-1.x86_64.rpm" },
-            { label: "AppImage", link: "/services/rng/rng-toolbox/appimage/RNG Toolbox_0.1.0_amd64.AppImage" },
+            { label: ".deb", link: "/public/services/rng/rng-toolbox/deb/RNG Toolbox_0.1.0_amd64.deb" },
+            { label: ".rpm", link: "/public/services/rng/rng-toolbox/rpm/RNG Toolbox-0.1.0-1.x86_64.rpm" },
+            { label: "AppImage", link: "/public/services/rng/rng-toolbox/appimage/RNG Toolbox_0.1.0_amd64.AppImage" },
         ],
     },
 ];
@@ -52,7 +52,7 @@ function UsbSection() {
             <Typography className="text-gray-600 text-2xl font-bold mb-4">USB TRNG</Typography>
             <Typography className="text-md text-gray-500">Indian Patent filed (202431022600)</Typography>
 
-            <a href="/services/rng/FONQP RNG Brochure.pdf">
+            <a href="/public/services/rng/FONQP RNG Brochure.pdf">
                 <Button className="bg-cyan-300 hover:bg-cyan-400 my-10">
                     <div className="flex items-center gap-2">
                         <DocumentArrowDownIcon className="h-4" />
@@ -90,7 +90,7 @@ function FemtoSection() {
             </a>
 
             <img
-                src="/services/eaas.png"
+                src="/public/services/eaas.png"
                 alt="Femtosecond"
                 className="rounded-xl mx-auto max-w-2xl object-cover"
             />

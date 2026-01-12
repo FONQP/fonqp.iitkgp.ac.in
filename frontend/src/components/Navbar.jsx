@@ -7,6 +7,7 @@ import {
     MenuList,
     MenuItem,
     IconButton,
+    Collapse,
 } from "@material-tailwind/react";
 import {
     Square3Stack3DIcon,
@@ -107,22 +108,11 @@ export default function StickyNavbar() {
                 <div className="flex items-center justify-between text-blue-gray-900">
                     <Link to="/" className="ml-2 flex-shrink-0">
                         <img
-                            src="/logo-crp.png"
+                            src="/public/logo-crp.png"
                             alt="FONQP Logo"
                             className="h-7 w-auto"
                         />
                     </Link>
-
-                    {/* Mobile hamburger (hidden on lg) */}
-                    <IconButton
-                        size="sm"
-                        color="blue-gray"
-                        variant="text"
-                        onClick={toggleIsNavOpen}
-                        className="lg:hidden"
-                    >
-                        <Bars2Icon className="h-6 w-6" />
-                    </IconButton>
 
                     {isServicePage && (
                         <div className="absolute left-1/2 -translate-x-1/2 hidden sm:block">
@@ -141,14 +131,22 @@ export default function StickyNavbar() {
                     )}
 
                     <div className="flex items-center gap-4">
+                        <IconButton
+                            size="sm"
+                            color="blue-gray"
+                            variant="text"
+                            onClick={toggleIsNavOpen}
+                            className="lg:hidden"
+                        >
+                            <Bars2Icon className="h-6 w-6" />
+                        </IconButton>
+
                         <div className="mr-4 hidden lg:block"><NavList /></div>
                     </div>
                 </div>
-                {openNav && (
-                    <MobileNav open={openNav} className="lg:hidden overflow-scroll">
-                        <NavList />
-                    </MobileNav>
-                )}
+                <Collapse open={openNav}>
+                    <NavList />
+                </Collapse>
             </Navbar>
         </>
     );

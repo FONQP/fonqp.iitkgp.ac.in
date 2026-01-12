@@ -20,7 +20,7 @@ export default function About() {
                 </p>
 
                 <img
-                    src="about/rrmodule.jpeg"
+                    src="/public/about/rrmodule.jpeg"
                     alt="Quantum Lab"
                     className="float-right w-96 h-auto ml-6 mb-4 rounded-md shadow-md"
                 />
@@ -59,7 +59,7 @@ export default function About() {
                 </ul>
 
                 <img
-                    src="about/ftir.jpeg"
+                    src="/public/about/ftir.jpeg"
                     alt="Fiber Optics"
                     className="float-left w-96 h-auto mr-6 mb-8 rounded-xl shadow-md"
                 />

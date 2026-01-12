@@ -18,17 +18,17 @@ export default function Home() {
                     loop={true}
                 >
                     <img
-                        src="home/QuEd.jpg"
+                        src="/public/home/QuEd.jpg"
                         alt="Slide 1"
                         className="h-full w-full object-cover"
                     />
                     <img
-                        src="home/uw.jpg"
+                        src="/public/home/uw.jpg"
                         alt="Slide 2"
                         className="h-full w-full object-cover"
                     />
                     <img
-                        src="home/rr.jpg"
+                        src="/public/home/rr.jpg"
                         alt="Slide 3"
                         className="h-full w-full object-cover"
                     />

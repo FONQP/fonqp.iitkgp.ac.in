@@ -3,7 +3,7 @@ export const sir = {
     designation: "Supervisor",
     description: "Professor at Dept. of E&ECE, IIT Kharagpur",
     email: "skvarshney@ece.iitkgp.ac.in",
-    image: "team/sir.png",
+    image: "/public/team/sir.png",
     website: "https://www.iitkgp.ac.in/department/EC/faculty/ec-skvarshney",
     googleScholar: "https://scholar.google.co.in/citations?user=7KsrPeEAAAAJ&hl=en",
 }

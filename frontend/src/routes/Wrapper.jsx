@@ -9,9 +9,9 @@ export default function Wrapper() {
     const bkg =
         [...matches]
             .reverse()
-            .find(m => m.handle?.bkg)?.handle.bkg || "/gen_bkg.jpg";
+            .find(m => m.handle?.bkg)?.handle.bkg || "/public/gen_bkg.jpg";
 
-    const isDefault = bkg === "/gen_bkg.jpg";
+    const isDefault = bkg === "/public/gen_bkg.jpg";
     const bgClasses = isDefault
         ? "bg-repeat bg-[length:600px_600px] bg-center"
         : "bg-no-repeat bg-cover bg-center";

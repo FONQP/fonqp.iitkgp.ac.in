@@ -33,7 +33,6 @@ export const router = createBrowserRouter([
                     { path: "/team", element: <Team /> },
                     { path: "/publications", element: <Publications /> },
                     { path: "/contact", element: <Contact /> },
-                    { path: "/test", element: <div>Test Page</div> },
 
                     {
                         path: "/teaching",
@@ -53,17 +52,17 @@ export const router = createBrowserRouter([
                             {
                                 path: "rng",
                                 element: <Rng />,
-                                handle: { bkg: "/services/rng-bkg.png" },
+                                handle: { bkg: "/public/services/rng-bkg.png" },
                             },
                             {
                                 path: "metamizer",
                                 element: <Metamizer />,
-                                handle: { bkg: "/services/MetaMizer-bkg.png" },
+                                handle: { bkg: "/public/services/MetaMizer-bkg.png" },
                             },
                             {
                                 path: "datasets",
                                 element: <Datasets />,
-                                handle: { bkg: "/services/MetaMizer-bkg.png" },
+                                handle: { bkg: "/public/services/MetaMizer-bkg.png" },
                             },
                         ],
                         handle: { bkg: null }
