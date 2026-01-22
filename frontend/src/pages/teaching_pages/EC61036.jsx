@@ -107,15 +107,16 @@ export default function EC61036() {
                     <Typography variant="h4" className="text-gray-700 leading-relaxed pt-6">
                         Grading Policy:
                     </Typography>
-                    <ul className="list-disc pl-6 pt-2 text-gray-700 text-lg">
-                        <li>Class tests: 20%</li>
+                    <ul className="list-none pl-6 pt-2 text-gray-700 text-lg">
+                        <li>Attendance: 10%</li>
+                        <li>Class tests and quizzes: 30%</li>
                         <li>Mid-semester: 30%</li>
-                        <li>End-semester: 50%</li>
+                        <li>End-semester: 30%</li>
                     </ul>
                     <Typography variant="h4" className="text-gray-700 leading-relaxed pt-6">
                         Suggested Readings:
                     </Typography>
-                    <ul className="list-none pt-2 text-gray-700 text-lg">
+                    <ul className="list-disk pt-2 text-gray-700 text-lg">
                         <li>B.E. A. Saleh Fundamentals of Photonics</li>
                         <li>L. Pavesi, Silicon Photonics (Springer)</li>
                         <li>L. Pavesi edited, Handbook of Silicon Photonics (CRC Press)</li>

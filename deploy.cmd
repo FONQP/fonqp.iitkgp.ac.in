@@ -1,0 +1,1 @@
+type deploy.ps1 | ssh fonqp@10.7.13.11 "powershell -NoProfile -ExecutionPolicy Bypass -Command -"

@@ -1,1 +1,1 @@
-ssh fonqp@10.7.13.11 "powershell -File deploy.ps1"
+cat ./deploy.ps1 | ssh fonqp@10.7.13.11 "powershell -NoProfile -ExecutionPolicy Bypass -Command -"
