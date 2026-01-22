@@ -2,10 +2,23 @@ Set-Location -Path "C:/Users/fonqp/fonqp.iitkgp.ac.in"
 git fetch origin main
 git reset --hard origin/main
 cd frontend
-npm install
-npm run build
+
+Write-Host "--- Starting Build ---"
+
+cmd /c "npm install" | Out-Null
+cmd /c "npm run build" | Out-Null
+
+Write-Host "--- Build Complete. Zipping... ---"
+
 cd dist
-Compress-Archive -Path * -DestinationPath ../dist.zip -Force
+Get-ChildItem -Path . | Compress-Archive -DestinationPath ../dist.zip -Force
+
 cd ..
+
+Write-Host "--- Uploading... ---"
 scp ./dist.zip fonqp@academicweb.iitkgp.ac.in:~/
-ssh fonqp@academicweb.iitkgp.ac.in "unzip -o ./dist.zip"
+
+Write-Host "--- Unzipping on Remote... ---"
+ssh -n fonqp@academicweb.iitkgp.ac.in "unzip -q -o ./dist.zip"
+
+Write-Host "--- Deployment Success ---"
