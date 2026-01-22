@@ -10,7 +10,7 @@ export default function Home() {
             <div className="mx-auto max-w-screen-xl text-center">
                 <Carousel
                     transition={{ duration: 2 }}
-                    className="h-[60vh] rounded-xl shadow-xl"
+                    className="h-[70vh] rounded-xl shadow-xl"
                     prevArrow={() => null}
                     nextArrow={() => null}
                     autoplay={true}
@@ -18,33 +18,53 @@ export default function Home() {
                     loop={true}
                 >
                     <img
-                        src="/public/home/QuEd.jpg"
+                        src="/public/home/grp.jpg"
                         alt="Slide 1"
                         className="h-full w-full object-cover"
                     />
                     <img
-                        src="/public/home/uw.jpg"
+                        src="/public/home/QuEd.jpg"
                         alt="Slide 2"
                         className="h-full w-full object-cover"
                     />
                     <img
                         src="/public/home/rr.jpg"
-                        alt="Slide 3"
+                        alt="Slide 4"
+                        className="h-full w-full object-cover"
+                    />
+                    <img
+                        src="/public/home/uw1.jpg"
+                        alt="Slide 5"
                         className="h-full w-full object-cover"
                     />
                 </Carousel>
             </div>
 
-            <div className="mx-auto max-w-screen-xl py-12 text-center text-gray-700">
-                <Typography variant="h1" color="blue-gray" className="mb-4 text-4xl font-semibold">
+            <div className="mx-auto max-w-screen-xl py-16 text-center text-gray-700">
+                <Typography variant="h1" color="blue-gray" className="mb-6 text-5xl font-semibold">
                     Fiber Optics, Nano & Quantum Photonics (FONQP) Group
                 </Typography>
-                <Typography variant="h3" className="text-xl">
+                <Typography variant="h3" className="text-2xl">
                     Advanced Photonics Lab, IIT Khargpur
                 </Typography>
-                <Typography className="pt-4 text-lg">
+                <Typography className="pt-6 text-lg">
                     We are a research group led by Prof. Shailendra Varshney, working on fiber optics, underwater communication, nonlinearity in waveguide, dielectric metasurface, and quantum photonics.
                 </Typography>
+
+                <Typography
+                    variant="h3"
+                    color="blue-gray"
+                    className="mb-8 text-center font-semibold py-12"
+                >
+                    Funding Agencies
+                </Typography>
+                <div className="flex flex-wrap justify-center items-center gap-24">
+                    <img src="/public/home/dst.png" alt="DST" className="h-32 w-auto" />
+                    <img src="/public/home/nqm.png" alt="NQM" className="h-32 w-auto" />
+                    <img src="/public/home/moes.png" alt="MOES" className="h-32 w-auto" />
+                    <img src="/public/home/cdot.png" alt="CDOT" className="h-32 w-auto" />
+                    <img src="/public/home/niot.png" alt="NIOT" className="h-32 w-auto" />
+                </div>
             </div>
 
             <NewsPanel />
