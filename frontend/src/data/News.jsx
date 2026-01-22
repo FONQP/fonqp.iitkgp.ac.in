@@ -9,4 +9,9 @@ export const newsItems = [
         date: "9th December 2025",
         news: "Paper titled 'Femtosecond-laser-based true-random-number generator: Entropy as a service' accepted for publication."
     },
+    {
+        title: "Paper Accepted in APS Physical Review Applied",
+        date: "12th December 2025",
+        news: "Paper titled 'Femtosecond-laser-based true-random-number generator: Entropy as a service' accepted for publication."
+    },
 ];
