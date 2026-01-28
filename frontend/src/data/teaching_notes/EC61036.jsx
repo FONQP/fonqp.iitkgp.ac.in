@@ -1,12 +1,8 @@
 export const SLIDE_ITEMS = [
     {
-        title: "Introduction",
-        previewLink: "https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7/preview",
-    },
-    {
-        title: "Introduction",
-        previewLink: "https://drive.google.com/file/d/1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7/preview",
-    },
+        title: "Introduction and Waveguides",
+        previewLink: "https://drive.google.com/file/d/1faDx0KMTGEFDNlTHKTRpfB_PV36v6nnO/view?usp=sharing",
+    }
 ];
 
 export const NOTES_DATA = [

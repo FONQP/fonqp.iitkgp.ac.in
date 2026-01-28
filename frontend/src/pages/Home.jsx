@@ -10,7 +10,7 @@ export default function Home() {
             <div className="mx-auto max-w-screen-xl text-center">
                 <Carousel
                     transition={{ duration: 2 }}
-                    className="h-[70vh] rounded-xl shadow-xl"
+                    className="h-[70vh] rounded-xl shadow-xl px-4"
                     prevArrow={() => null}
                     nextArrow={() => null}
                     autoplay={true}
