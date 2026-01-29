@@ -117,11 +117,11 @@ export default function EC61036() {
                         Suggested Readings:
                     </Typography>
                     <ul className="list-disk pt-2 text-gray-700 text-lg">
-                        <li><a href="https://drive.google.com/file/d/1c01zp_Nm1vldlb0My2jayc9our0-lZPZ/view?usp=sharing" target="_blank">Okamoto Fundamentals of Optical Waveguides</a></li>
-                        <li><a href="https://drive.google.com/file/d/1TorvRKqgXGVZo3qs3jpmtADwfT31rK-O/view?usp=sharing" target="_blank">Synder and Love Optical Waveguide Theory</a></li>
-                        <li><a href="https://drive.google.com/file/d/1wdvBbvfS3OSVhh7cnQkG8s2aUbQzlv6g/view?usp=sharing" target="_blank">B.E. A. Saleh Fundamentals of Photonics</a></li>
+                        <li>Okamoto Fundamentals of Optical Waveguides</li>
+                        <li>Synder and Love Optical Waveguide Theory</li>
+                        <li>B.E. A. Saleh Fundamentals of Photonics</li>
                         <li>L. Pavesi, Silicon Photonics (Springer)</li>
-                        <li><a href="https://lab.semi.ac.cn/library/upload/files/2019/3/19164027432.pdf" target="_blank">Amnon Yariv and Pochi Yeh, Photonics: Optical Electronics in Modern Communications (Oxford University Press)</a></li>
+                        <li>Amnon Yariv and Pochi Yeh, Photonics: Optical Electronics in Modern Communications (Oxford University Press)</li>
                         <li>L. Pavesi edited, Handbook of Silicon Photonics (CRC Press)</li>
                         <li>L. Chrostowski and M. Hochberg, Silicon Photonics Design from Devices to Systems (Cambridge Univ. Press)</li>
                         <li>S. Fathpour and B. Jalali, Silicon photonics for Telecommunication and Biomedicine (CRC Press)</li>
