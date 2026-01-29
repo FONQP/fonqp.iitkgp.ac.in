@@ -1,5 +1,4 @@
 export const newsItems = [
-    
     {
         title: "Paper Accepted in APS Physical Review Applied",
         date: "16th January 2026",

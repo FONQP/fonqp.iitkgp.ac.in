@@ -109,7 +109,7 @@ export default function EC61036() {
                     </Typography>
                     <ul className="list-none pl-6 pt-2 text-gray-700 text-lg">
                         <li>Attendance: 10%</li>
-                        <li>Class tests and quizzes: 30%</li>
+                        <li>Class tests and quizzes: 30% <b>(Class test on 4th February)</b></li>
                         <li>Mid-semester: 30%</li>
                         <li>End-semester: 30%</li>
                     </ul>
@@ -117,8 +117,11 @@ export default function EC61036() {
                         Suggested Readings:
                     </Typography>
                     <ul className="list-disk pt-2 text-gray-700 text-lg">
-                        <li>B.E. A. Saleh Fundamentals of Photonics</li>
+                        <li><a href="https://drive.google.com/file/d/1c01zp_Nm1vldlb0My2jayc9our0-lZPZ/view?usp=sharing" target="_blank">Okamoto Fundamentals of Optical Waveguides</a></li>
+                        <li><a href="https://drive.google.com/file/d/1TorvRKqgXGVZo3qs3jpmtADwfT31rK-O/view?usp=sharing" target="_blank">Synder and Love Optical Waveguide Theory</a></li>
+                        <li><a href="https://drive.google.com/file/d/1wdvBbvfS3OSVhh7cnQkG8s2aUbQzlv6g/view?usp=sharing" target="_blank">B.E. A. Saleh Fundamentals of Photonics</a></li>
                         <li>L. Pavesi, Silicon Photonics (Springer)</li>
+                        <li><a href="https://lab.semi.ac.cn/library/upload/files/2019/3/19164027432.pdf" target="_blank">Amnon Yariv and Pochi Yeh, Photonics: Optical Electronics in Modern Communications (Oxford University Press)</a></li>
                         <li>L. Pavesi edited, Handbook of Silicon Photonics (CRC Press)</li>
                         <li>L. Chrostowski and M. Hochberg, Silicon Photonics Design from Devices to Systems (Cambridge Univ. Press)</li>
                         <li>S. Fathpour and B. Jalali, Silicon photonics for Telecommunication and Biomedicine (CRC Press)</li>
@@ -241,7 +244,7 @@ export default function EC61036() {
                                                 src={slide.previewLink}
                                                 title={slide.title}
                                                 width="100%"
-                                                height="250px"
+                                                height="370px"
                                                 className="border border-gray-300 rounded"
                                             ></iframe>
                                         </div>

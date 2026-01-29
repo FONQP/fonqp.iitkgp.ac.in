@@ -39,6 +39,18 @@ export default function Team() {
         </div>
     );
 
+    const getDirectDriveUrl = (url) => {
+        if (!url || !url.includes("drive.google.com")) return url;
+
+        const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/);
+
+        if (match && match[1]) {
+            return `https://lh3.googleusercontent.com/d/${match[1]}`;
+        }
+
+        return url;
+    };
+
     const renderCards = (members) => (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {members.map((member) => (
@@ -49,9 +61,10 @@ export default function Team() {
                 >
                     <CardBody className="flex flex-col items-center text-center">
                         <img
-                            src={member.image}
+                            src={getDirectDriveUrl(member.image)}
                             alt={member.name}
-                            className="w-24 h-24 rounded-full object-cover mb-4"
+                            className="w-28 h-28 rounded-full object-cover mb-4"
+                            referrerPolicy="no-referrer"
                         />
                         <Typography variant="h6">{member.name}</Typography>
                         <Typography className="text-sm text-gray-500">

@@ -7,10 +7,10 @@ import { opportunities } from "../data/Opportunities";
 export default function Home() {
     return (
         <>
-            <div className="mx-auto max-w-screen-xl text-center">
+            <div className="mx-auto max-w-screen-xl text-center px-4">
                 <Carousel
                     transition={{ duration: 2 }}
-                    className="h-[70vh] rounded-xl shadow-xl px-4"
+                    className="h-[70vh] rounded-xl shadow-xl"
                     prevArrow={() => null}
                     nextArrow={() => null}
                     autoplay={true}
@@ -134,9 +134,10 @@ export function OpportunitiesPanel() {
                             <Typography variant="h5" className="font-semibold pb-1">
                                 {item.title}
                             </Typography>
-                            <Typography className="text-gray-700 text-sm leading-relaxed">
-                                {item.description}
-                            </Typography>
+                            <div 
+                                className="text-gray-700 text-sm leading-relaxed"
+                                dangerouslySetInnerHTML={{ __html: item.description }}
+                            />
                         </div>
 
                         {/* Right side: duration */}
